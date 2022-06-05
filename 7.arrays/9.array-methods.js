@@ -60,6 +60,22 @@ const quelquesOntPayé = eleves.some((e) => e.aPaye === true);
  * reduce() and reduceRight()
  */
 
+/**
+ * SOMME
+ */
+
+arr = [4, 5, 2, 9, 5, 1, -8];
+
+// Methode 1 : For
+
+let somme = 0; // accumulator
+for (let i = 0; i < arr.length; i++) {
+  somme = somme + arr[i];
+}
+
+// Methode 2 : reduce
+
+somme = arr.reduce((prev, curr) => prev + curr, 0); // curr equivaut arr[i]
 
 /**
  * concat()

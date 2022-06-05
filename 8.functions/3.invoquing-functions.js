@@ -12,6 +12,7 @@ in five ways:
 • Indirectly through their call() and apply() methods
 • Implicitly, via JavaScript language features that do not appear like normal func‐
 tion invocations
+
  */
 
 /**
@@ -147,6 +148,7 @@ context, so the constructor function can refer to it with the this keyword.
 */
 o = new Object();
 o = new Object;
+
 /*Note that the new object is used as the invocation context even if the constructor invocation
 8.2 Invoking Functions | 191looks like a method invocation. That is, in the expression new o.m(), o is not used as the invocation context.
 
@@ -158,6 +160,7 @@ however, a constructor explicitly uses the return statement to return an object,
 that object becomes the value of the invocation expression. If the constructor uses
 return with no value, or if it returns a primitive value, that return value is ignored
 and the new object is used as the value of the invocation.
+
 */
 /**
  * Indirect invocation

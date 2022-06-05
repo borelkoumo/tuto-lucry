@@ -58,11 +58,13 @@ block.
 const square = function (x) {
   return x * x;
 };
+
 // Function expressions can include names, which is useful for recursion.
 const f = function fact(x) {
   if (x <= 1) return 1;
   else return x * fact(x - 1);
 };
+
 // Function expressions can also be used as arguments to other functions:
 [3, 2, 1].sort(function (a, b) {
   return a - b;
@@ -75,8 +77,12 @@ let tensquared = (function (x) {
 
 /**
 Note that the function name is optional for functions defined as expressions, and
-most of the preceding function expressions we’ve shown omit it. A function declara‐
-tion actually declares a variable and assigns a function object to it. A function expres‐
+most of the preceding function expressions we’ve shown omit it. 
+
+A function declara‐
+tion actually declares a variable and assigns a function object to it. 
+
+A function expres‐
 sion, on the other hand, does not declare a variable: it is up to you to assign the newly
 defined function object to a constant or variable if you are going to need to refer to it
 multiple times. It is a good practice to use const with function expressions so you
